@@ -1,1 +1,2 @@
-export const server = "http://localhost:8080/api/v1";
+export const server =
+  "https://doctor-appointment-application-lwbh.onrender.com/api/v1";

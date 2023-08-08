@@ -18,7 +18,12 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://doctor-appointment-application.netlify.app",
+    credentials: true,
+  })
+);
 
 //routes
 app.use("/api/v1/user", require("./routes/userRoutes"));
